@@ -3,95 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MentorPro</title>
-
+  <title>MentorPro – Upgraded</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-      padding: 20px;
+      background: #eef1ff;
+      color: #333;
     }
 
     header {
-      background: #4a4aff;
-      padding: 20px;
+      background: linear-gradient(45deg, #4a4aff, #6f6fff);
+      padding: 25px;
       color: white;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
     }
 
     .section {
       background: white;
-      margin: 20px auto;
+      margin: 20px 0;
       padding: 20px;
-      border-radius: 10px;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
     }
 
     button {
-      padding: 12px 20px;
-      margin: 10px;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       background: #4a4aff;
       color: white;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: bold;
       cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #3737ff;
     }
 
     .content-box {
       display: none;
       margin-top: 15px;
       padding: 15px;
-      background: #eaeaff;
+      background: #dde0ff;
       border-radius: 10px;
-      text-align: left;
+      animation: fade 0.3s;
+    }
+
+    @keyframes fade {
+      from {opacity: 0;} to {opacity: 1;}
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background: #4a4aff;
+      color: white;
+      font-size: 14px;
     }
   </style>
 </head>
-
 <body>
   <header>MentorPro – Professional Mentoring</header>
 
-  <div class="section">
-    <h2>Select Category</h2>
+  <div class="container">
+    <div class="section">
+      <h2>Select Category</h2>
+      
+      <button onclick="toggle('business')">📈 Business Mentoring</button>
+      <button onclick="toggle('career')">🎯 Career Guidance</button>
+      <button onclick="toggle('motivation')">💡 Positive Impact Tips</button>
 
-    <button onclick="toggle('business')">Business Mentoring</button>
-    <button onclick="toggle('career')">Career Guidance</button>
-    <button onclick="toggle('motivation')">Positive Impact Tips</button>
+      <div id="business" class="content-box">
+        <h3>📈 Business Mentoring</h3>
+        <p>• How to start a business<br>
+           • Budget planning basics<br>
+           • Building a strong network<br>
+           • Customer relationship strategies</p>
+      </div>
 
-    <div id="business" class="content-box">
-      <h3>Business Mentoring</h3>
-      <p>• How to start a business<br>
-         • Budget planning basics<br>
-         • Building a strong network<br>
-         • Customer relationship strategies</p>
-    </div>
+      <div id="career" class="content-box">
+        <h3>🎯 Career Guidance</h3>
+        <p>• Skill development steps<br>
+           • Resume & portfolio building<br>
+           • Communication improvement<br>
+           • Interview tips</p>
+      </div>
 
-    <div id="career" class="content-box">
-      <h3>Career Guidance</h3>
-      <p>• Skill development steps<br>
-         • Resume & portfolio building<br>
-         • Communication improvement<br>
-         • Interview tips</p>
-    </div>
-
-    <div id="motivation" class="content-box">
-      <h3>Positive Impact Tips</h3>
-      <p>• Think positive, act positive<br>
-         • Help others whenever possible<br>
-         • Work with discipline<br>
-         • Stay focused on long-term goals</p>
+      <div id="motivation" class="content-box">
+        <h3>💡 Positive Impact Tips</h3>
+        <p>• Think positive, act positive<br>
+           • Help others whenever possible<br>
+           • Work with discipline<br>
+           • Stay focused on long-term goals</p>
+      </div>
     </div>
   </div>
 
+  <footer>© 2025 MentorPro. All Rights Reserved.</footer>
+
   <script>
     function toggle(id) {
+      const sections = document.querySelectorAll('.content-box');
+      sections.forEach(sec => sec.style.display = 'none');
+
       const box = document.getElementById(id);
-      box.style.display = box.style.display === "block" ? "none" : "block";
+      box.style.display = 'block';
     }
   </script>
 </body>
