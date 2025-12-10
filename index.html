@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MentorPro</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      background: #4a4aff;
+      padding: 20px;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .section {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      padding: 12px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #4a4aff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .content-box {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background: #eaeaff;
+      border-radius: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header>MentorPro – Professional Mentoring</header>
+
+  <div class="section">
+    <h2>Select Category</h2>
+
+    <button onclick="toggle('business')">Business Mentoring</button>
+    <button onclick="toggle('career')">Career Guidance</button>
+    <button onclick="toggle('motivation')">Positive Impact Tips</button>
+
+    <div id="business" class="content-box">
+      <h3>Business Mentoring</h3>
+      <p>• How to start a business<br>
+         • Budget planning basics<br>
+         • Building a strong network<br>
+         • Customer relationship strategies</p>
+    </div>
+
+    <div id="career" class="content-box">
+      <h3>Career Guidance</h3>
+      <p>• Skill development steps<br>
+         • Resume & portfolio building<br>
+         • Communication improvement<br>
+         • Interview tips</p>
+    </div>
+
+    <div id="motivation" class="content-box">
+      <h3>Positive Impact Tips</h3>
+      <p>• Think positive, act positive<br>
+         • Help others whenever possible<br>
+         • Work with discipline<br>
+         • Stay focused on long-term goals</p>
+    </div>
+  </div>
+
+  <script>
+    function toggle(id) {
+      const box = document.getElementById(id);
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
