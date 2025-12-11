@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Mentoring</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    /* Smooth animation */
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: #000;
+      color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    /* HERO POSTER */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+    .hero-overlay {
+      background: rgba(0,0,0,0.55);
+      padding: 50px;
+      border-radius: 25px;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; margin-bottom: 10px; }
+    p { font-size: 1.1rem; }
+
+    .btn {
+      background: #ffcc00;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* SECTIONS */
+    section { padding: 70px 20px; text-align: center; }
+    .content-box { max-width: 900px; margin: auto; }
+
+    .grid-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding-top: 20px;
+    }
+    .card {
+      background: #f3f3f3;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+    .card:hover { background: #ffe680; transform: translateY(-5px); }
+
+    /* CONTACT */
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #ffcc00;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* small screens */
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .hero-overlay { padding: 25px; }
+      nav { padding: 12px 15px; }
+      section { padding: 50px 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">⭐ Professional Mentoring</div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#impact">Impact</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero fade">
+    <div class="hero-overlay">
+      <h1>Unlock Your Potential</h1>
+      <p>Your success journey starts with the right guidance.</p>
+      <a href="#impact" class="btn">See How We Help</a>
+    </div>
+  </section>
+
+  <!-- POSITIVE IMPACT SECTION -->
+  <section id="impact" class="fade">
+    <h2>Our Positive Impact</h2>
+    <div class="grid-box">
+      <div class="card">✔ 1000+ Students Upskilled</div>
+      <div class="card">✔ Career Growth & Confidence Boost</div>
+      <div class="card">✔ Personalized Guidance for Every Learner</div>
+      <div class="card">✔ Real-World Knowledge & Experience</div>
+      <div class="card">✔ Focus on Future-Ready Skills</div>
+      <div class="card">✔ Strong Discipline & Motivation Building</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="fade">
+    <h2>Our Services</h2>
+    <div class="grid-box">
+      <div class="card">
+        <h3>Career Guidance</h3>
+        <p>Resume help, interview prep, career path planning.</p>
+      </div>
+      <div class="card">
+        <h3>Business Mentorship</h3>
+        <p>Startup advice, business modelling, market-fit help.</p>
+      </div>
+      <div class="card">
+        <h3>Skill Development</h3>
+        <p>Technical skills, soft-skills, critical thinking.</p>
+      </div>
+      <div class="card">
+        <h3>Startup Coaching</h3>
+        <p>Pitch guidance, fundraising basics, scaling tips.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="fade">
+    <h2>About Us</h2>
+    <div class="content-box">
+      <p>We help students, creators, and young entrepreneurs unlock their true potential with expert mentorship, real-life experience, and continuous motivation. Our goal is simple — build strong, confident, and skilled individuals ready for success.</p>
+      <p><strong>Mission:</strong> To make high-quality mentoring accessible and actionable.</p>
+      <p><strong>Vision:</strong> A future where every learner has a mentor to guide their first steps.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="fade">
+    <h2>What People Say</h2>
+    <div class="grid-box">
+      <div class="card">“This mentorship changed my career completely!”</div>
+      <div class="card">“I gained confidence and clarity about my future.”</div>
+      <div class="card">“The best guidance for beginners and young entrepreneurs.”</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade">
+    <h2>Contact Us</h2>
+    <div class="content-box">
+      <input type="text" placeholder="Your Name" id="name">
+      <input type="email" placeholder="Your Email" id="email">
+      <textarea rows="5" placeholder="Your Message" id="message"></textarea>
+      <button id="sendBtn">Send Message</button>
+      <p id="msgStatus" style="display:none;margin-top:10px;"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Professional Mentoring | Building a Better Future
+  </footer>
+
+  <script>
+    // Simple form handler (client-side only)
+    document.getElementById('sendBtn').addEventListener('click', function() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('msgStatus');
+
+      if (!name || !email || !message) {
+        status.style.display = 'block';
+        status.style.color = 'red';
+        status.textContent = 'Please fill all fields before sending.';
+        return;
+      }
+
+      // Simulate a send (to implement properly, use a backend or service)
+      status.style.display = 'block';
+      status.style.color = 'green';
+      status.textContent = 'Thank you! Your message has been recorded. We will contact you soon.';
+      // reset fields
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    });
+
+    // Simple scroll reveal for fade elements
+    document.addEventListener('scroll', function() {
+      document.querySelectorAll('.fade').forEach(function(el, i) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          el.style.animationDelay = (i * 0.1) + 's';
+          el.style.opacity = 1;
+          el.style.transform = 'translateY(0)';
+        }
+      });
+    });
+    // trigger once
+    document.dispatchEvent(new Event('scroll'));
+  </script>
+</body>
+</html>
