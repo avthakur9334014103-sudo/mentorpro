@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MentorPro — Professional Mentoring</title>
+  <meta name="description" content="MentorPro: Professional mentoring for students, creators and young entrepreneurs. Career guidance, skill development, and business mentoring." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar" role="navigation">
+    <div class="brand"><span class="dot"></span><h3>MentorPro</h3></div>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="contact.html">Get Mentored</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn" aria-hidden="false">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" style="display:none">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="box">
+      <h1>Professional Mentoring</h1>
+      <p>Guidance that builds confidence, skills, and a powerful future — practical help from real experts.</p>
+      <a class="btn hero-cta" href="services.html">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <div class="container">
+    <section class="section">
+      <h2>Our Positive Impact</h2>
+      <div class="grid">
+        <div class="card"><strong>✔ 1000+ Students Upskilled</strong><p class="muted">Real outcomes with trackable growth.</p></div>
+        <div class="card"><strong>✔ Career Clarity</strong><p class="muted">Roadmaps & 1:1 guidance.</p></div>
+        <div class="card"><strong>✔ Future-ready Skills</strong><p class="muted">Blend of tech & soft skills.</p></div>
+        <div class="card"><strong>✔ Business Mentorship</strong><p class="muted">From idea to product-market fit.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Quick Services</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="service-icon">🎯</div>
+          <h3>Career Guidance</h3>
+          <p>Resume, interview prep, and career roadmaps.</p>
+        </div>
+        <div class="card">
+          <div class="service-icon">💼</div>
+          <h3>Business Mentoring</h3>
+          <p>Startup coaching, MVP advice, and pitching tips.</p>
+        </div>
+        <div class="card">
+          <div class="service-icon">🧠</div>
+          <h3>Skill Development</h3>
+          <p>Technical & soft-skill programs tailored to you.</p>
+        </div>
+        <div class="card">
+          <div class="service-icon">🤝</div>
+          <h3>1:1 Mentoring</h3>
+          <p>Personal sessions to accelerate progress.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 MentorPro — Building a better future • <a href="privacy.html" style="color:#fff">Privacy</a>
+  </footer>
+
+<script>
+  // mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', ()=> {
+    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+      mobileMenu.style.display = 'block';
+    } else {
+      mobileMenu.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — MentorPro</title>
+  <meta name="description" content="Services offered by MentorPro: Career Guidance, Business Mentoring, Skill Development and 1:1 mentoring." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand"><span class="dot"></span><h3>MentorPro</h3></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="contact.html">Get Mentored</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn2">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu2" style="display:none">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="container section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Career Guidance</h3>
+        <p>Personalized plans, CV reviews, interview training and mentoring to help you land the right role.</p>
+      </div>
+      <div class="card">
+        <h3>Skill Development</h3>
+        <p>Hands-on projects and practice sessions to improve both technical and soft skills.</p>
+      </div>
+      <div class="card">
+        <h3>Business Mentoring</h3>
+        <p>Strategy, validation, go-to-market and fundraising basics for startups and founders.</p>
+      </div>
+      <div class="card">
+        <h3>1:1 Mentoring</h3>
+        <p>One-on-one weekly or monthly sessions tailored to your goals and pace.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 MentorPro</footer>
+
+<script>
+  const m1 = document.getElementById('menuBtn2'), mm2 = document.getElementById('mobileMenu2');
+  m1.addEventListener('click', ()=> mm2.style.display = (mm2.style.display === 'block' ? 'none' : 'block'));
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — MentorPro</title>
+  <meta name="description" content="About MentorPro: mission, vision and approach to mentoring." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand"><span class="dot"></span><h3>MentorPro</h3></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn3">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu3" style="display:none">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="container section">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-wrap">
+      <div class="about-img"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="About"></div>
+      <div class="about-text">
+        <p>MentorPro helps students, creators, and young entrepreneurs unlock their potential. We provide practical, experience-driven mentoring with focus on skill-building, confidence, and results.</p>
+        <p><strong>Mission:</strong> Make high-quality mentoring accessible and actionable.<br>
+        <strong>Vision:</strong> A future where every learner has a mentor to guide their first steps.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 MentorPro</footer>
+
+<script>
+  const m3 = document.getElementById('menuBtn3'), mm3 = document.getElementById('mobileMenu3');
+  m3.addEventListener('click', ()=> mm3.style.display = (mm3.style.display === 'block' ? 'none' : 'block'));
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — MentorPro</title>
+  <meta name="description" content="Contact MentorPro for mentoring sessions and enquiries." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand"><span class="dot"></span><h3>MentorPro</h3></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn4">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu4" style="display:none">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="container section">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contactForm">
+      <input id="name" type="text" placeholder="Your Name" required />
+      <input id="email" type="email" placeholder="Your Email" required />
+      <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+      <p id="status" style="display:none;margin-top:10px;"></p>
+    </form>
+  </section>
+
+  <footer>© 2025 MentorPro</footer>
+
+<script>
+  const m4 = document.getElementById('menuBtn4'), mm4 = document.getElementById('mobileMenu4');
+  m4.addEventListener('click', ()=> mm4.style.display = (mm4.style.display === 'block' ? 'none' : 'block'));
+
+  // Simple client-side submit simulation.
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const s = document.getElementById('status');
+    s.style.display = 'block';
+    s.style.color = 'green';
+    s.textContent = 'Thanks! Your message was received (demo). We will contact you soon.';
+    this.reset();
+  });
+</script>
+</body>
+</html>
+  /* style.css - common styles for all pages */
+:root{
+  --accent:#ffcc00;
+  --bg:#f7f7f8;
+  --card:#ffffff;
+  --muted:#666;
+  --maxw:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* NAV */
+.navbar{
+  position:fixed;
+  top:0; left:0; right:0;
+  background:rgba(255,255,255,0.98);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 18px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+  z-index:999;
+}
+.brand{
+  display:flex;align-items:center;gap:10px;font-weight:800;color:#111;
+}
+.brand .dot{width:10px;height:10px;background:var(--accent);border-radius:3px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{color:#111;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
+.nav-links a:hover{background:rgba(0,0,0,0.03)}
+.cta{background:var(--accent);padding:9px 14px;border-radius:10px;color:#111;font-weight:800;text-decoration:none}
+
+/* mobile menu */
+.menu-btn{display:none;cursor:pointer;padding:6px;border-radius:8px}
+.mobile-menu{display:none;position:fixed;top:62px;left:12px;right:12px;background:var(--card);padding:12px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.12)}
+.mobile-menu a{display:block;padding:10px 6px;border-radius:8px;color:#111;text-decoration:none}
+
+/* HERO */
+.hero{
+  min-height:78vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 60px;
+  background-image:linear-gradient(rgba(3,3,3,0.45), rgba(3,3,3,0.25)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop');
+  background-position:center;
+  background-size:cover;
+  color:white;
+}
+.hero .box{max-width:900px;padding:28px;border-radius:16px;background:rgba(0,0,0,0.35)}
+.hero h1{font-size:2.6rem;margin:0 0 10px}
+.hero p{margin:0 0 18px;opacity:0.95;font-size:1.05rem}
+.hero .hero-cta{display:inline-block;}
+
+/* LAYOUT */
+.container{max-width:var(--maxw);margin:30px auto;padding:0 18px}
+.section{padding:54px 0}
+.section h2{font-size:1.9rem;margin:0 0 14px;text-align:center}
+.grid{
+  display:grid;
+  gap:18px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  margin-top:20px;
+}
+.card{
+  background:var(--card);
+  padding:18px;border-radius:12px;
+  box-shadow:0 6px 18px rgba(8,8,8,0.05);
+}
+
+/* services small */
+.service-icon{font-size:28px;color:var(--accent);margin-bottom:8px}
+.card h3{margin:6px 0 8px}
+
+/* about */
+.about-wrap{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.about-img{flex:0 0 420px;border-radius:12px;overflow:hidden}
+.about-img img{width:100%;display:block}
+.about-text{flex:1}
+
+/* contact */
+form{max-width:680px;margin:0 auto}
+input,textarea{
+  width:100%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid #ddd;font-size:1rem;
+}
+.btn{
+  display:inline-block;background:var(--accent);padding:12px 18px;border-radius:10px;font-weight:800;text-decoration:none;color:#111;border:none;cursor:pointer;
+}
+
+/* footer */
+footer{padding:20px;text-align:center;background:#0f1720;color:#fff;margin-top:40px}
+
+/* responsive */
+@media (max-width:800px){
+  .hero h1{font-size:1.7rem}
+  .brand h3{font-size:1rem}
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .mobile-menu{display:none}
+  }
